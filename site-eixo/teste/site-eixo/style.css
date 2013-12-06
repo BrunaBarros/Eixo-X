@@ -1,0 +1,33 @@
+body{
+	background-color:white;
+	/*background-image:("/home/bruna/APRENDENDO/Front-end/site-eixo/original/img/foguete.png");*/
+}
+
+.plano{
+	background-image:url('/.../.../APRENDENDO/Front-end/site-eixo/original/img/foguete.png');
+	height:300px; 
+	font-size:63px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.container{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.base{
+	text-align: center;
+	color: black; 
+}
+
+/*copiado*/
+#topo{
+	width:auto;
+	height:0;
+	background-color:white;
+	border-top:1px solid #666;
+	border-bottom:2px dotted #666;
+	color:black;
+	text-align:center;
+}

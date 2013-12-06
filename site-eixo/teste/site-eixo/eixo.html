@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+  <html>
+  <head>
+      <title>Eixo X</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <link rel="stylesheet" href="../../site-eixo/original/css/bootstrap-eixox.css">
+      <link rel="stylesheet" href="../../site-eixo/original/css/bootstrap-glyphicons.css">
+      <link rel="stylesheet" href="../../site-eixo/original/css/nprogress.css">
+      <link rel="stylesheet" href="../../site-eixo/teste/style.css">
+  </head>
+  <body>
+
+    <header id="top">
+      <nav class="navbar navbar-default" role="navigation" class="body">
+        <div class="container"></div>
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#"></a>
+        </div>
+
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li><a href="#">Processo</a></li> <!-- class="active" -->
+            <li><a href="#">Equipe</a></li>
+            <li><a href="#">Laboratório</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Redes Sociais <b class="caret"></b></a>
+              <ul class="dropdown-menu">
+                <li><a href="http://www.linkedin.com/company/1500196?trk=tyah&trkInfo=tas%3AEixo%2Cidx%3A1-3-3">Linkedin</a></li>
+                <li><a href="https://www.facebook.com/eixox">Facebook</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div><!-- /.navbar-collapse -->
+      </nav>
+    </header>
+    <div class="plano">
+      <div class="plano" style="background-image:url('../../site-eixo/original/img/foguete.png');">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6">
+              <h1>Conhecendo o CPF</h1>
+            </div>
+            <div class="col-md-6">
+              <div style="text-align: right; font-size: x-small;">*foto NASA</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <main class="container">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Dúvidas mais comuns: </h2><br />
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3> O que é <a href = "http://www.receita.fazenda.gov.br/pessoafisica/cpf/cadastropf.htm">CPF? </a> </h3>
+          <p> 
+            O CPF (<i>Cadastro de Pessoas Físicas</i>), é o registro de um cidadão na Receita Federal brasileira no qual devem estar todos os contribuintes. O CPF armazena informações fornecidas pelo próprio contribuinte e por outros sistemas da Receita Federal. 
+          </p>
+        </div>
+        <div class="class row">
+          <div class="class col md-6">
+            <div>
+              <input id="txtCpf" type="text" />
+              <input type="button" id="btnCpf" value="Validar!" onclick="alertaValidaCpf(document.getElementById('txtCpf').value)" />
+            </div>
+            <br /> <img src="/home/bruna/Imagens/cpf.jpg" alt="Cartão cpf" height="140" width="190"> <br /> 
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3> O CPF é obrigatório?</h3>
+          <p> 
+            Teoricamente, sua posse não é obrigatória, mas quem não o possuir não poderá fazer operações financeiras (como abertura de contas em bancos, por exemplo) e até mesmo fazer compras. Estrangeiros visitantes, portanto, têm fortes problemas em fazer compras no Brasil, ao contrário do que ocorre em outros países. O cidadão brasileiro, por outro lado, possui o CPF quase como uma segunda carteira de identidade e raramente questiona sua necessidade. 
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>É obrigatório o porte do CPF?</h3>
+          <p> 
+            O porte do cartão também não é obrigatório, embora sua apresentação seja exigida em diversas ocasiões, como instrumento auxiliar na autenticação da identidade do indivíduo. Nesses casos, também podem ser apresentados outros documentos oficiais em que o CPF é mencionado, como o RG ou a carteira de motorista. 
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3> Ele pode ser cancelado? </h3>
+          <p> 
+            Há diversos casos em que o CPF pode ser cancelado. Por exemplo, quando o contribuinte não apresenta a declaração de Imposto de Renda por dois anos consecutivos, quando é apresentada a Declaração Final de Espólio, ou por vício/fraude, em que constará a situação "nulo".
+          </p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Conhecendo os dígitos: </h3>
+          <p> 
+            O número de um CPF tem exatamente 9 algarismos em sua raiz e mais dois dígitos verificadores que são indicados por último. Portanto, um CPF tem 11 algarismos.
+          </p> 
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Entendendo o <a href="http://www.geradorcpf.com/algoritmo_do_cpf.htm">algoritmo </a> do CPF: </h3>
+          <!-- "numbers" on CPF -->
+          <p> 
+             O <a href="http://pt.wikipedia.org/wiki/Algoritmo"> algoritmo </a> do gerador dos números do CPF, é o passo a passo de como foi feito.<br />
+             Um CPF é formado por:<br />
+              
+              Sendo j e k, os dígitos de verificação do CPF.O "j" seria o primeiro <a href="http://pt.wikipedia.org/wiki/D%C3%ADgito_verificador"> dígito verificador </a> de CPF e o "k" seria o segundo.
+          </p> 
+        </div>
+        <div class="class row">
+          <div class="class col md-6"><br /> <br /> <br />
+            <center>
+                  <table border=1 bgcolor='white' size= 6> <!-- tabela -->
+                    <tr> <!-- 1º linha -->
+                      <td width="30" align=" center">  a  </td>
+                      <td width="30" align=" center">  b  </td>
+                      <td width="30" align=" center">  c  </td>
+                      <td width="30" align=" center">  .  </td>
+                      <td width="30" align=" center">  d  </td>
+                      <td width="30" align=" center">  e  </td>
+                      <td width="30" align=" center">  f  </td>
+                      <td width="30" align=" center">  .  </td>
+                      <td width="30" align=" center">  g  </td>
+                      <td width="30" align=" center">  h  </td>
+                      <td width="30" align=" center">  i  </td>
+                      <td width="30" align=" center">  -  </td>
+                      <td width="30" align=" center">  j  </td>
+                      <td width="30" align=" center">  k  </td>
+                    </tr>
+                  </table>
+                </center> 
+                <br />
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <br /><h4> O primeiro passo é encontrar o dígito "j": </h4>
+        <p>Vamos obter os multiplos de "j": 
+        </div>
+        <div class="class row">
+          <div class="class col md-6">
+          <br /> 
+            <center>
+              <table border=1 bgcolor='white' size= 6> <!-- tabela -->
+                <tr> <!-- 1º linha -->
+                  <td width="30" align=" center">  a  </td>
+                  <td width="30" align=" center">  b  </td>
+                  <td width="30" align=" center">  c  </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  d  </td>
+                  <td width="30" align=" center">  e  </td>
+                  <td width="30" align=" center">  f  </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  g  </td>
+                  <td width="30" align=" center">  h  </td>
+                  <td width="30" align=" center">  i  </td>
+                </tr>
+                <tr> <!-- 2º linha -->
+                  <td width="30" align=" center"> x10  </td>
+                  <td width="30" align=" center">  x9  </td>
+                  <td width="30" align=" center">  x8  </td>
+                  <td width="30" align=" center">   </td>
+                  <td width="30" align=" center">  x7  </td>
+                  <td width="30" align=" center">  x6  </td>
+                  <td width="30" align=" center">  x5  </td>
+                  <td width="30" align=" center">    </td>
+                  <td width="30" align=" center">  x4  </td>
+                  <td width="30" align=" center">  x3 </td>
+                  <td width="30" align=" center">  x2  </td>
+                </tr>
+              </table>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <br />
+          <p>
+            Para ficar mais fácil, vamos colocar números no lugar das letras "a" até "i".
+            Supondo que temos um cpf com os seguintes números: <br />
+            Agora ficou mais simples, de encontrar os multiplos de "j" :<br />
+          </p> <br /> <br />
+          <p>Após a multiplicação, teremos o segundo resultado:</p><br /> <br />
+          <br /> 
+          <p>
+              Com esse resultado, iremos fazer uma <a href= "http://pt.wikipedia.org/wiki/Somat%C3%B3rio"> somatória:</a>
+          </p><br /><br /> <br />
+          <p>
+            Com o resultado da somatória iremos dividi-lo por 11: 
+          </p><br /><br />
+          <p> O resto da divisão,levando em consideração só o número inteiro:
+            <ul>
+              <li> <b> Se for 0 ou 1 o dígito "j" será igual a 0;
+              <li> Se for 2, 3, 4, 5, 6, 7, 8, 9 ou 10 o dígito "j" será igual a 11-resto.</b>
+            </ul>
+          </p>
+          <p> No nosso caso, o primeiro dígito ("j"), tem o valor de:<i> 3</i>.</p>
+        </div>
+        <div class="class row">
+          <div class="class col md-6">
+            <br /> <br /> 
+            <center> 
+              <table border=1 bgcolor='white' size= 6>
+                <tr> 
+                  <td width="30" align=" center">  1  </td>
+                  <td width="30" align=" center">  1  </td>
+                  <td width="30" align=" center">  1  </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  2  </td>
+                  <td width="30" align=" center">  2  </td>
+                  <td width="30" align=" center">  2  </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  3  </td>
+                  <td width="30" align=" center">  3  </td>
+                  <td width="30" align=" center">  3  </td>
+                  <td width="30" align=" center">  -  </td>
+                  <td width="30" align=" center">  j  </td>
+                  <td width="30" align=" center">  k  </td>
+                </tr>
+              </table>
+            </center>
+            <br /> <br /> <br />
+            <center> 
+              <table border=1 bgcolor='white' size= 6>
+                <tr> 
+                  <td width="30" align=" center">  10 </td>
+                  <td width="30" align=" center">  9  </td>
+                  <td width="30" align=" center">  8  </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  14 </td>
+                  <td width="30" align=" center">  12 </td>
+                  <td width="30" align=" center">  10 </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  12 </td>
+                  <td width="30" align=" center">  9  </td>
+                  <td width="30" align=" center">  6  </td>
+                </tr>
+              </table>
+            </center> 
+            <br /> <br /> <br>
+            <div class="base">
+              <p>Somatória</p>
+              <i>10 + 9 + ... + 9 + 6 = 90</i> 
+            </div><br /> <br /><br />
+            <div class="base">
+              <i>90 / 11 = 8.18</i>
+            </div> <br /> <br />
+          </div>
+        </div>
+      </div>
+      <br /> <br /> <br /> 
+      <div class="row">
+        <div class="col-md-6">
+          <h4>Segundo passo,é encontrar o dígito "k": </h4>
+          <p>
+            Vamos repetir os dois primeiros processos que realizamos para descobrir o primeiro dígito. Vamos fazer a multiplicação e somatória. A unica diferença que dessa vez vamos ter o dígito "j" na multiplicação e na somatória. <p> 
+            Otendo o resultado de: <i>10.36</i>
+          </p>
+          <p>
+              <ul>
+                <li>  Se for 0 ou 1 o dígito "j" será igual a 0;
+                <li> Se for 2, 3, 4, 5, 6, 7, 8, 9 ou 10 o dígito "j" será igual a 11-resto.
+               </ul>
+          <p>No nosso caso, o segundo dígito "k", tem o valor de: <i> 1 </i>.</p>
+         
+        </div>
+        <div class="class row">
+          <div class="class col md-6">
+            <br /> 
+            <center> 
+              <table border=1 bgcolor='white' size= 6> <!-- tabela -->
+                <tr> <!-- 1º linha -->
+                  <td width="30" align=" center">  1  </td>
+                  <td width="30" align=" center">  1  </td>
+                  <td width="30" align=" center">  1  </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  2  </td>
+                  <td width="30" align=" center">  2  </td>
+                  <td width="30" align=" center">  2  </td>
+                  <td width="30" align=" center">  .  </td>
+                  <td width="30" align=" center">  3  </td>
+                  <td width="30" align=" center">  3  </td>
+                  <td width="30" align=" center">  3  </td>
+                  <td width="30" align=" center">  j  </td>
+                </tr>
+                <tr> <!-- 2º linha -->
+                  <td width="30" align=" center"> x11  </td>
+                  <td width="30" align=" center"> x10  </td>
+                  <td width="30" align=" center">  x9  </td>
+                  <td width="30" align=" center">      </td>
+                  <td width="30" align=" center">  x8  </td>
+                  <td width="30" align=" center">  x7  </td>
+                  <td width="30" align=" center">  x6  </td>
+                  <td width="30" align=" center">      </td>
+                  <td width="30" align=" center">  x5  </td>
+                  <td width="30" align=" center">  x4  </td>
+                  <td width="30" align=" center">  x3  </td>
+                  <td width="30" align=" center">  x2  </td>
+                </tr>
+              </table>
+            </center>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-6">
+          <h3>Obtendo o CPF: </h3><br />
+        </div>
+        <div class="class row">
+            <div class="class col md-6">
+              <br /> <br /> <br /> 
+              <center>
+                <table border=1 bgcolor='white' size= 6> <!-- tabela -->
+                  <tr> <!-- 1º linha -->
+                    <td width="30" align=" center">  1  </td>
+                    <td width="30" align=" center">  1  </td>
+                    <td width="30" align=" center">  1  </td>
+                    <td width="30" align=" center">  .  </td>
+                    <td width="30" align=" center">  2  </td>
+                    <td width="30" align=" center">  2  </td>
+                    <td width="30" align=" center">  2  </td>
+                    <td width="30" align=" center">  .  </td>
+                    <td width="30" align=" center">  3  </td>
+                    <td width="30" align=" center">  3  </td>
+                    <td width="30" align=" center">  3  </td>
+                    <td width="30" align=" center">  -  </td>
+                    <td width="30" align=" center">  3  </td>
+                    <td width="30" align=" center">  1  </td>
+                  </tr>
+                </table>
+              </center> 
+            </div>
+        </div>
+      </div>
+
+
+
+
+      <br /> <br /> 
+      <p class="container base "><a href="#top"> Back on top</a></p> 
+    </main>
+
+    
+    <!-- Scripts -->
+    <script src="../../site-eixo/original/javascript/jquery-1.9.0.min.js"></script>
+    <script src="../../site-eixo/original/javascript/nprogress.js"></script>
+    <script src="../../site-eixo/original/javascript/eixox-base.js"></script>
+    <script type="text/javascript" src="http://static.tumblr.com/8l2gpxb/lcllulgcn/snowstorm.js"></script>
+    <script type="text/javascript" src="../../site-eixo/original/javascript/bootstrap.min.js"></script>
+
+      <!-- now, we'll customize the snowStorm object -->
+    <script type="text/javascript">// <![CDATA[
+      snowStorm.snowColor = '#D3D3D3';
+      snowStorm.flakesMaxActive = 50;  
+      snowStorm.useTwinkleEffect = true; 
+
+      function alertaValidaCpf(cpf) {
+        var validado = validarCPF(cpf);
+
+        if (validado) {
+          var localidade = cpf.charAt(8);
+          alert('CPF válido! :) (localidade ' + localidade + ')');
+        } 
+        else {
+          alert('CPF inválido :(');
+        }
+      }
+
+
+      function validarCPF(cpf) {
+          cpf = cpf.replace(/[^\d]+/g,'');
+       
+          if(cpf == '') return false;
+       
+          // Elimina CPFs invalidos conhecidos
+          if (cpf.length != 11 || 
+              cpf == "00000000000" || 
+              cpf == "11111111111" || 
+              cpf == "22222222222" || 
+              cpf == "33333333333" || 
+              cpf == "44444444444" || 
+              cpf == "55555555555" || 
+              cpf == "66666666666" || 
+              cpf == "77777777777" || 
+              cpf == "88888888888" || 
+              cpf == "99999999999")
+              return false;
+           
+          // Valida 1o digito
+          add = 0;
+          for (i=0; i < 9; i ++)
+              add += parseInt(cpf.charAt(i)) * (10 - i);
+          rev = 11 - (add % 11);
+          if (rev == 10 || rev == 11)
+              rev = 0;
+          if (rev != parseInt(cpf.charAt(9)))
+              return false;
+           
+          // Valida 2o digito
+          add = 0;
+          for (i = 0; i < 10; i ++)
+              add += parseInt(cpf.charAt(i)) * (11 - i);
+          rev = 11 - (add % 11);
+          if (rev == 10 || rev == 11)
+              rev = 0;
+          if (rev != parseInt(cpf.charAt(10)))
+              return false;
+               
+          return true;
+      }
+    </script>
+   <script type='.dropdown-toggle' dropdown()></script>
+  </body>
+</html>

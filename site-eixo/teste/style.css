@@ -1,0 +1,78 @@
+.underbackground{
+	background-image:url('/home/bruna/APRENDENDO/Front-end/site-eixo/original/img/background.jpg');
+	width: 100%;
+	min-height: 100%;
+	background-position: center bottom;
+	background-size: contain;
+	background-repeat: no-repeat;
+	text-align: center;
+	color: black;
+}
+.title{
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-weight: 500;
+	text-shadow: 3px 2px black;
+	font-style: normal;
+	text-align: center;
+	font-size: 70px;
+	color: white;
+
+	
+}
+.background{
+	background-image:url('/.../.../img/foguete.png');
+	height:350px; 
+	font-size:63px;
+	background-size:cover;
+	background-repeat: no-repeat;
+}
+.directory{
+
+}
+.container{
+	margin-right: 10px;
+	margin-left: 10px;
+}
+
+.base{
+	text-align: center;
+	color: black; 
+}
+.top{
+	color: white;
+	font-style: normal;
+	text-align: right;
+
+}
+.footer{
+	background: black;
+	text-align: center;	
+	font-weight: bold;
+}
+
+#snowflakeContainer {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.snowflake {
+    padding-left: 15px;
+    font-family: Cambria, Georgia, serif;
+    font-size: 14px;
+    line-height: 24px;
+    position: fixed;
+    color: skyblue;
+    user-select: none;
+    z-index: 1000;
+}
+
+.snowflake:hover {
+    cursor: default;
+}
+
+.navbar{
+	margin: 0;
+}
+  
+
