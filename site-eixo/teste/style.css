@@ -1,5 +1,5 @@
 .underbackground{
-	background-image:url('/home/bruna/APRENDENDO/Front-end/site-eixo/original/img/background.jpg');
+	background-image:url('https://github.com/BrunaBarros/Eixo-X/blob/master/site-eixo/original/img/background.jpg?raw=true');
 	width: 100%;
 	min-height: 100%;
 	background-position: center bottom;
@@ -20,14 +20,11 @@
 	
 }
 .background{
-	background-image:url('/.../.../img/foguete.png');
+	background-image:url('https://github.com/BrunaBarros/Eixo-X/blob/master/site-eixo/original/img/background.jpg?raw=true');
 	height:350px; 
 	font-size:63px;
 	background-size:cover;
 	background-repeat: no-repeat;
-}
-.directory{
-
 }
 .container{
 	margin-right: 10px;
