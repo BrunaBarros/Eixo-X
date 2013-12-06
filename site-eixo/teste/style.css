@@ -1,7 +1,7 @@
 .underbackground{
 	background-image:url('https://github.com/BrunaBarros/Eixo-X/blob/master/site-eixo/original/img/background.jpg?raw=true');
 	width: 100%;
-	min-height: 100%;
+	min-height: 90%;
 	background-position: center bottom;
 	background-size: contain;
 	background-repeat: no-repeat;
